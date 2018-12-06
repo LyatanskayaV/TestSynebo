@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class main {
+        static Scanner sc = new Scanner(System.in);
+        static int n = sc.nextInt();
+        static int point, side;
+
+    public static void main(String[] args) {
+        point = (int) Math.sqrt(n);
+        side = n/point;
+        int result = point*(side+1)+side*(point+1);
+
+        System.out.print(result);
+    }
+}
